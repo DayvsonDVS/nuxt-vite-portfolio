@@ -74,7 +74,7 @@ function onClick() {
     }
 
     .circuLarbg1 {
-      background: #fc4a1a;
+      background: var(--color-orange);
       transition: 0.6s ease-in-out;
       transition-delay: 0.4s;
     }
@@ -111,7 +111,7 @@ function onClick() {
       left: 1%;
       width: 60px;
       height: 60px;
-      background: #9733EE;
+      background: var(--color-purple);
       z-index: 1;
       border-radius: 50%;
       cursor: pointer;
@@ -156,7 +156,7 @@ function onClick() {
 
           &:hover {
             ion-icon {
-              color: #fc4a1a;
+              color: var(--color-orange);
             }
           }
 
@@ -185,7 +185,7 @@ function onClick() {
 
           &:hover {
             ion-icon {
-              color: #fc4a1a;
+              color: var(--color-orange);
             }
           }
 

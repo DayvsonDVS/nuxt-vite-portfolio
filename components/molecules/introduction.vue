@@ -1,11 +1,11 @@
 <template>
   <div class="introduction">
-    <h2>Fullstack <span>developer</span></h2>
+    <h2>Full Stack <span>Developer</span></h2>
 
     <h4>Olá,</h4>
 
     <p>
-      Sou <span>Dayvson</span>, desenvolvedor fullstack apaixonado por criar soluções inovadoras que unem front-end e
+      Sou <span>Dayvson</span>, desenvolvedor full stack apaixonado por criar soluções inovadoras que unem front-end e
       back-end, com foco em interfaces intuitivas, e em APIs escaláveis.
     </p>
 
