@@ -19,6 +19,15 @@ export default defineNuxtConfig({
       ]
     }
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "@/assets/scss/breakpoints.scss";`
+        }
+      }
+    }
+  },
   components: [{ path: '@/components', pathPrefix: false }],
   dir: {
     pages: 'components/pages/'

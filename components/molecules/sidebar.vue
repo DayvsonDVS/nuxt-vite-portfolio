@@ -9,8 +9,9 @@
 
       <div class="circuLar">
         <ul class="circle">
-          <li v-for="item in itemsCircle">
-            <a href="#"></a><ion-icon :name="item"></ion-icon>
+          <li v-for="{ icon, url } in itemsCircle">
+            <nuxt-link :href="url"><ion-icon :name="icon"></ion-icon></nuxt-link>
+
           </li>
         </ul>
       </div>
@@ -37,7 +38,7 @@ const iconList = [
   { icon: 'settings' }
 ]
 
-const itemsCircle = ['camera-outline', 'logo-github', 'videocam-outline']
+const itemsCircle = [{ icon: 'camera-outline', url: '' }, { icon: 'logo-github', url: 'https://github.com/DayvsonDVS' }, { icon: 'videocam-outline', url: '' }]
 
 function onClick() {
   isActive.value = !isActive.value
@@ -46,7 +47,6 @@ function onClick() {
 
 <style lang="scss">
 .sidebar {
-  margin-right: 15px;
 
   .tab {
     position: relative;

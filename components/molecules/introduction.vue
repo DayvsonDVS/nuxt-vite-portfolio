@@ -20,7 +20,7 @@
 .introduction {
   max-width: 400px;
   color: #fff;
-  padding: 25px;
+  padding: 0.3rem;
 
   h2 {
     margin-bottom: 15px;

@@ -72,7 +72,7 @@ ul {
       }
     }
 
-    :hover {
+    &:hover {
       span {
         z-index: 1000;
         transition: 0.5s;

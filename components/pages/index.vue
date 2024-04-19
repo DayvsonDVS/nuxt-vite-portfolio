@@ -1,8 +1,11 @@
 <template>
   <div class="index">
-    <introduction />
-    <avatar />
-    <sidebar />
+    <Introduction />
+    <div class="index-skills">
+      <Avatar />
+      <Skills />
+    </div>
+
   </div>
 
 </template>
@@ -14,6 +17,13 @@
 <style scoped lang="scss">
 .index {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+
+  .index-skills {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+  }
 }
 </style>
