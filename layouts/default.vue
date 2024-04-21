@@ -2,15 +2,12 @@
   <Container>
     <div class="layout">
       <div class="header">
-        <div class="icon">
-          <Logo />
-
-        </div>
+        <NavigationBar />
       </div>
 
       <div class="main">
+        <FixedSideBar />
         <slot />
-        <Sidebar />
       </div>
 
       <div class="footer">
@@ -31,28 +28,17 @@
 
   .header {
     display: grid;
-    align-items: center;
-
-    .icon {
-      margin-left: 3rem;
-      width: 80px;
-      height: 80px;
-    }
+    align-items: end;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    position: sticky;
   }
 
   .main {
-    height: max-content;
     display: grid;
-    grid-template-columns: 1fr max-content;
-    padding: 0.4rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    grid-template-columns: max-content 1fr;
+    gap: 2rem;
   }
 
   .footer {}

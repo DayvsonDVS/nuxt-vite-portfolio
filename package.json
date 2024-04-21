@@ -12,6 +12,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/three": "^0.163.0",
+    "normalize.css": "^8.0.1",
     "nuxt": "^3.8.0",
     "sass": "^1.75.0",
     "three": "^0.163.0",

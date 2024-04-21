@@ -4,15 +4,12 @@
   box-sizing: border-box;
 }
 
-:root {
-  --bg: linear-gradient(to right, #141e30, #243b55);
-}
-
 body {
   font-family: -apple-system, 'Montserrat';
   min-height: 100vh;
   background: var(--bg);
   line-height: 1.5;
+  color: #fff;
 }
 
 :root {

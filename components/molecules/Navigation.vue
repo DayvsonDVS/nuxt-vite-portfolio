@@ -1,6 +1,6 @@
 <template>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <div class="sidebar">
+  <div class="navigation">
     <div :class="['tab', { active: isActive }]">
       <div class="menuToggle" @click="onClick()"><span>+</span></div>
 
@@ -17,8 +17,8 @@
       </div>
 
       <ul class="menu">
-        <li v-for="{ icon } in iconList">
-          <a href="#"><ion-icon :name="icon"></ion-icon></a>
+        <li v-for="{ icon, url } in iconList">
+          <NuxtLink :href="url"><ion-icon :name="icon"></ion-icon></NuxtLink>
         </li>
       </ul>
     </div>
@@ -31,10 +31,10 @@ import 'assets/scss/main.scss'
 const isActive = ref<boolean>(false)
 
 const iconList = [
-  { icon: 'home' },
-  { icon: 'person' },
-  { icon: '' },
-  { icon: 'chatbubble' },
+  { icon: 'home', url: '/' },
+  { icon: 'person', url: '/about' },
+  { icon: '', url: '' },
+  { icon: 'chatbubble', url: '' },
   { icon: 'settings' }
 ]
 
@@ -43,15 +43,17 @@ const itemsCircle = [{ icon: 'camera-outline', url: '' }, { icon: 'logo-github',
 function onClick() {
   isActive.value = !isActive.value
 }
+
+
 </script>
 
 <style lang="scss">
-.sidebar {
+.navigation {
 
   .tab {
     position: relative;
-    width: 90px;
-    height: 400px;
+    width: 400px;
+    height: 85px;
     z-index: 1;
     user-select: none;
     display: grid;
@@ -64,12 +66,12 @@ function onClick() {
       position: absolute;
       left: 50%;
       transform: translate(-50%);
-      width: 80px;
-      height: 160px;
+      width: 160px;
+      height: 80px;
       background: #fff;
+      border-bottom-left-radius: 80px;
       border-bottom-right-radius: 80px;
-      border-top-right-radius: 80px;
-      transform-origin: left center;
+      transform-origin: top center;
       transition: 1s ease-in-out;
     }
 
@@ -90,7 +92,7 @@ function onClick() {
       .circuLar,
       .circuLarbg1,
       .circuLarbg2 {
-        transform: translate(-50%) rotate(180deg);
+        transform: translateX(-50%) rotate(180deg);
 
       }
 
@@ -106,9 +108,9 @@ function onClick() {
 
     .menuToggle {
       position: absolute;
-      top: 170px;
+      top: -30px;
       transform: translateX(-50%);
-      left: 1%;
+      left: 50%;
       width: 60px;
       height: 60px;
       background: var(--color-purple);
@@ -119,7 +121,7 @@ function onClick() {
       font-size: 2.5em;
       font-weight: 600;
       transition: 1s ease-in-out;
-      display: grid;
+      display: flex;
       justify-content: center;
       align-items: center;
     }
@@ -141,15 +143,15 @@ function onClick() {
           @each $i in 1, 2, 3 {
             &:nth-child(#{$i}) {
               @if $i ==1 {
-                transform: translate(-15px, -45px);
+                transform: translate(50px, -15px);
               }
 
               @else if $i ==2 {
-                transform: translate(15px, 0px);
+                transform: translate(0px, 15px);
               }
 
               @else {
-                transform: translate(-15px, 45px);
+                transform: translate(-50px, -15px);
               }
             }
           }
@@ -174,14 +176,20 @@ function onClick() {
         inset: 0;
         background: #182d3c;
         border-radius: 10px;
-        display: grid;
+        display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 3rem;
         box-shadow: 0 -15px 25px rgba(0, 0, 0, 0.1);
 
         li {
           list-style: none;
+          cursor: pointer;
+
+          // &:nth-child(2) {
+          //   position: relative;
+          //   left: 10px;
+          // }
 
           &:hover {
             ion-icon {

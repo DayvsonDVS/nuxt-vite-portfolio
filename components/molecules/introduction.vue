@@ -1,8 +1,6 @@
 <template>
   <div class="introduction">
-    <h2>Full Stack <span>Developer</span></h2>
-
-    <h4>Olá,</h4>
+    <h1>Seja bem vindo ao meu espaço de apresentação!</h1>
 
     <p>
       Sou <span>Dayvson</span>, desenvolvedor full stack apaixonado por criar soluções inovadoras que unem front-end e
@@ -18,23 +16,20 @@
 
 <style scoped lang="scss">
 .introduction {
-  max-width: 400px;
   color: #fff;
   padding: 0.3rem;
+  display: grid;
 
-  h2 {
-    margin-bottom: 15px;
-
-    span {
-      color: #9733EE;
-    }
-  }
-
-  h4 {
+  h1 {
+    font-size: 50px;
+    text-align: left;
     margin-bottom: 15px;
   }
 
   p {
+    font-size: 18px;
+    max-width: 500px;
+
     span {
       font-weight: 800;
       color: #fc4a1a;

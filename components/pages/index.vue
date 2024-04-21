@@ -1,11 +1,14 @@
 <template>
   <div class="index">
-    <Introduction />
-    <div class="index-skills">
-      <Avatar />
-      <Skills />
+    <div class="index__header">
+      <Introduction />
     </div>
 
+    <ProfessionalResume />
+
+    <div class="index__footer">
+      <CardService />
+    </div>
   </div>
 
 </template>
@@ -16,14 +19,21 @@
 
 <style scoped lang="scss">
 .index {
-  display: grid;
-
-  .index-skills {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: left;
-    gap: 2rem;
+  .index__header {
+    padding: 2.4rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
   }
+
+  .index__footer {
+    .card-service {}
+  }
+
 }
 </style>
