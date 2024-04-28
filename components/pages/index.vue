@@ -7,6 +7,7 @@
     <ProfessionalResume />
 
     <div class="index__footer">
+      <h2>Cargos de atuação</h2>
       <CardService />
     </div>
   </div>
@@ -32,6 +33,10 @@
   }
 
   .index__footer {
+    h2 {
+      padding: 2rem;
+    }
+
     .card-service {}
   }
 

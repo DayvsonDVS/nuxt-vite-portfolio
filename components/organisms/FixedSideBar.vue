@@ -2,6 +2,10 @@
   <div class="fixed-side">
     <Avatar />
     <Skills />
+    <PersonalData />
+    <div class="line" />
+    <Language />
+    <div class="line" />
   </div>
 </template>
 
@@ -26,5 +30,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+
+  .line {
+    width: 12px;
+    height: 2px;
+    background-color: var(--color-orange);
+    width: 100%;
+  }
 }
 </style>

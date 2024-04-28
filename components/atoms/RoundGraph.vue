@@ -1,0 +1,55 @@
+<template>
+  <div class="round-graph">
+    <canvas :id="title" style="color: #fff;" />
+  </div>
+</template>
+
+<script setup lang="ts">
+import Charts from 'chart.js/auto';
+
+
+interface Prop {
+  title: string
+  value: string
+}
+
+const props = defineProps<Prop>()
+onMounted(() => {
+  const el = document.getElementById(props.title) as HTMLCanvasElement
+
+  new Charts(
+    el, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        label: props.title,
+        data: [props.value],
+        backgroundColor: [
+          'rgb(151,51,238)'
+        ],
+        hoverOffset: 4,
+      }],
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: props.title
+        }
+      }
+    },
+  }
+  )
+
+})
+</script>
+
+<style scoped lang="scss">
+.round-graph {
+  width: 140px;
+}
+</style>
