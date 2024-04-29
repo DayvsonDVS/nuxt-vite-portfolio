@@ -22,7 +22,6 @@
 .index {
   .index__header {
     padding: 2.4rem;
-    border-radius: 20px;
     background: rgba(255, 255, 255, 0.15);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);

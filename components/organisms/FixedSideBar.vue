@@ -1,17 +1,15 @@
 <template>
   <div class="fixed-side">
     <Avatar />
-    <Skills />
     <PersonalData />
     <div class="line" />
     <Language />
     <div class="line" />
+    <SkillExperience />
+    <div class="line" />
+    <SkillGallery />
   </div>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style scoped lang="scss">
 .fixed-side {
@@ -21,8 +19,6 @@
   justify-items: center;
   gap: 1rem;
   align-items: center;
-  padding: 1.4rem;
-  border-radius: 20px;
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);

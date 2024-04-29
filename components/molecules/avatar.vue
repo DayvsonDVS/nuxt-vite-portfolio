@@ -6,16 +6,15 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
-
 <style scoped lang="scss">
 .avatar {
   display: grid;
   justify-items: center;
   gap: 1rem;
   color: #fff;
+  width: 100%;
+  padding: 1rem;
+  background: #3f4c6b;
 
   h4 {
     span {

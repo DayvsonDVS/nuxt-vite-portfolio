@@ -1,6 +1,6 @@
 <template>
   <div class="round-graph">
-    <canvas :id="title" style="color: #fff;" />
+    <canvas :id="title" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import Charts from 'chart.js/auto';
 
 interface Prop {
   title: string
-  value: string
+  value: string[]
 }
 
 const props = defineProps<Prop>()
@@ -23,18 +23,18 @@ onMounted(() => {
     data: {
       datasets: [{
         label: props.title,
-        data: [props.value],
+        data: props.value,
         backgroundColor: [
-          'rgb(151,51,238)'
+          'rgb(151,51,238)',
+          'rgb(63,76,107)'
         ],
-        hoverOffset: 4,
       }],
     },
     options: {
       responsive: true,
       plugins: {
         legend: {
-          position: 'top',
+          position: 'bottom',
         },
         title: {
           display: true,
@@ -51,5 +51,6 @@ onMounted(() => {
 <style scoped lang="scss">
 .round-graph {
   width: 140px;
+  padding-bottom: 1rem;
 }
 </style>

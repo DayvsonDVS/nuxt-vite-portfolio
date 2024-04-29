@@ -7,12 +7,12 @@
 
 <script setup lang="ts">
 
-
 </script>
 
 <style scoped lang="scss">
 .personal-data {
   display: grid;
   gap: 0.5rem;
+  padding: 1rem;
 }
 </style>

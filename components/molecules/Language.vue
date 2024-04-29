@@ -1,10 +1,7 @@
 <template>
   <div class="language">
-    <!-- <RoundGraph percent="100%" title="Português" />
-    <RoundGraph percent="60%" title="Inglês" /> -->
-    <RoundGraph title="Português" value="100" />
-    <RoundGraph title="Inglês" value="60" />
-
+    <RoundGraph title="PORTUGUÊS" :value="['100']" />
+    <RoundGraph title="INGLÊS" :value="['55', '-45']" />
   </div>
 </template>
 
@@ -16,6 +13,6 @@
 .language {
   display: grid;
   grid-auto-flow: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 </style>
