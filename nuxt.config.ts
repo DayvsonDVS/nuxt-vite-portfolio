@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -21,7 +22,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['normalize.css', '@/assets/scss/main.scss', '@/assets/scss/vars.scss'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -31,6 +31,7 @@ export default defineNuxtConfig({
       }
     }
   },
+  css: ['normalize.css', '@/assets/scss/main.scss', '@/assets/scss/vars.scss'],
   components: [{ path: '@/components', pathPrefix: false }],
   dir: {
     pages: 'components/pages/'

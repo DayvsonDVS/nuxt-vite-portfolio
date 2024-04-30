@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h2>Minhas realizações</h2>
-    <ContainerCategories />
+    <CodeAnalysis />
   </div>
 </template>
 

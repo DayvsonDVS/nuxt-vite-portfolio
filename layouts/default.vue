@@ -32,7 +32,9 @@
     grid-auto-flow: column;
     justify-content: space-between;
     padding-bottom: 1.5rem;
+    padding-left: 4.5rem;
     position: sticky;
+
   }
 
   .main {

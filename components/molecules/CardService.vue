@@ -24,6 +24,7 @@ const listService = [
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 1.8rem;
+    justify-content: space-between;
 
     li {
       list-style: none;
