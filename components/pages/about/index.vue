@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h2>Minhas realizações</h2>
+    <h2>Realizações</h2>
     <CodeAnalysis />
   </div>
 </template>
@@ -13,6 +13,7 @@
 .about {
   h2 {
     color: #fff;
+    padding-bottom: 1rem;
 
     span {
       color: var(--color-orange);

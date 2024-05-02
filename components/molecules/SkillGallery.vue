@@ -1,7 +1,7 @@
 <template>
   <div class="skill-gallery">
     <Skill :items="['AtomicDesign,', 'MVC,', 'Jest']" />
-    <Skill :items="['GitHub,', 'Api restful']" />
+    <Skill :items="['GitHub,', 'Api restful,', 'Insomnia']" />
     <Skill :items="['Pinia,', 'Vite,', 'Vitest']" />
     <Skill :items="['Html,', 'Bootstrap']" />
     <Skill :items="['Sass,', 'Css']" />

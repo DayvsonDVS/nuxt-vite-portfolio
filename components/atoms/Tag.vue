@@ -28,7 +28,7 @@ defineProps<Prop>()
 $colors: CSS, HTML, Javascript, CSHARP, Outros, Vue, Typescript;
 
 .tag {
-  max-width: 435px;
+  max-width: 621px;
   display: grid;
   gap: 0.8rem;
 
