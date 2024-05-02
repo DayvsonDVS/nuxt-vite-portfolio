@@ -3,6 +3,7 @@
     <ProgressGraph title="vue" full="80" empty="20" />
     <ProgressGraph title="nuxt" full="60" empty="40" />
     <ProgressGraph title="adonis" full="40" empty="60" />
+    <ProgressGraph title="c#" full="50" empty="50" />
     <ProgressGraph title="typescript" full="70" empty="30" />
   </div>
 </template>

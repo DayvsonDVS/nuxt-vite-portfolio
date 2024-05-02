@@ -3,9 +3,8 @@
     <Skill :items="['AtomicDesign,', 'MVC,', 'Jest']" />
     <Skill :items="['GitHub,', 'Api restful,', 'Insomnia']" />
     <Skill :items="['Pinia,', 'Vite,', 'Vitest']" />
-    <Skill :items="['Html,', 'Bootstrap']" />
-    <Skill :items="['Sass,', 'Css']" />
-
+    <Skill :items="['Html,', 'Sass,', 'Css', 'Bootstrap']" />
+    <Skill :items="['SQL Server,', 'Mysql,', 'MongoDB']" />
   </div>
 </template>
 
