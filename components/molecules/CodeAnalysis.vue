@@ -5,7 +5,6 @@
       <FrameVideo :title="object.title" :path="object.path" />
     </div>
   </div>
-
 </template>
 <script setup lang="ts">
 
@@ -18,16 +17,16 @@ const siteProdutiva = [{ name: 'HTML', value: '58.9%' }, { name: 'CSHARP', value
 const apiMongo = [{ name: 'CSHARP', value: '100%' }] as any
 const projetoPerguntas = [{ name: 'Javascript', value: '98.4%' }, { name: 'HTML', value: '1.6%' }] as any
 
-const objectArray = [{ object: portfolio, title: 'Portfólio', path: '/_nuxt/utils/Video/MeuPortfolio.mp4' }, { object: bemEstar, title: 'Clinica Bem Estar', path: '/_nuxt/utils/Video/BemEstar.mp4' }, { object: blogNodejs, title: 'Blog Node.js', path: '/_nuxt/utils/Video/BlogNodejs.mp4' }, {
-  object: vendasCsharp, title: 'Vendas', path: '/_nuxt/utils/Video/SalesWebMvc.mp4'
-}, { object: consumoAPi, title: 'Consumo de API', path: '/_nuxt/utils/Video/ProjetoConsumoApiNode.mp4' }, { object: siteProdutiva, title: 'Site Produtiva', path: '/_nuxt/utils/Video/SiteProdutiva.mp4' }, { object: apiMongo, title: 'Api c# MongoDB', path: '/_nuxt/utils/Video/APIMongo.mp4' }, { object: projetoPerguntas, title: 'Projeto perguntas Node.js', path: '/_nuxt/utils/Video/ProjetoPerguntas.mp4' }]
+const objectArray = [{ object: portfolio, title: 'Portfólio', path: 'https://www.youtube.com/embed/bNKVrd-NW0E' }, { object: bemEstar, title: 'Clinica Bem Estar', path: 'https://www.youtube.com/embed/tts4AQ8xiLk' }, { object: blogNodejs, title: 'Blog Node.js', path: 'https://www.youtube.com/embed/XktmZELCUYk' }, {
+  object: vendasCsharp, title: 'Vendas', path: 'https://www.youtube.com/embed/ZH5x9J0ryjw'
+}, { object: consumoAPi, title: 'Consumo de API', path: 'https://www.youtube.com/embed/whmGOz6pytk' }, { object: siteProdutiva, title: 'Site Produtiva', path: 'https://www.youtube.com/embed/1htDyv70KzY' }, { object: apiMongo, title: 'Api c# MongoDB', path: 'https://www.youtube.com/embed/16TtXxJvBZQ' }, { object: projetoPerguntas, title: 'Projeto perguntas Node.js', path: 'https://www.youtube.com/embed/BHiWxJdOt5A' }]
 
 </script>
 
 <style scoped lang="scss">
 .code-analysis {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, 621px);
   gap: 3rem;
   justify-content: center;
 

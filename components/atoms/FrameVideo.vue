@@ -1,9 +1,11 @@
 <template>
   <div class="frame-video">
     <h2>{{ title }}</h2>
-    <video class="frame-video__content" controls>
-      <source :src="path" type="video/mp4" />
-    </video>
+
+    <iframe class="frame-video__content" :src="path" title="" frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen />
+
     <div class="code-analysis__video-frame-fake" />
   </div>
 </template>
