@@ -34,7 +34,7 @@ const iconList = [
   { icon: 'home', url: '/' },
   { icon: 'person', url: '/about' },
   { icon: '', url: '' },
-  { icon: 'chatbubble', url: '' },
+  { icon: 'chatbubble', url: '/contact' },
   { icon: 'settings' }
 ]
 

@@ -2,7 +2,6 @@ import { resolve } from 'path'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
-
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['ion-icon'].includes(tag)
@@ -22,6 +21,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  build: {
+    transpile: ['@cataline.io/darpi']
+  },
   vite: {
     css: {
       preprocessorOptions: {
@@ -31,7 +33,12 @@ export default defineNuxtConfig({
       }
     }
   },
-  css: ['normalize.css', '@/assets/scss/main.scss', '@/assets/scss/vars.scss'],
+  css: [
+    '@cataline.io/darpi/dist/style.css',
+    'normalize.css',
+    '@/assets/scss/main.scss',
+    '@/assets/scss/vars.scss'
+  ],
   components: [{ path: '@/components', pathPrefix: false }],
   dir: {
     pages: 'components/pages/'
