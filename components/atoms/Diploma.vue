@@ -1,5 +1,5 @@
 <template>
-  <div ref="elementVisible" :class="['diploma', { visible }]" :style="`background-image: url(_nuxt/${src});`">
+  <div ref="elementVisible" :class="['diploma', { visible }]" :style="`background-image: url(${src});`">
 
     <div class="diploma-hidden">
       <div class="diploma-hidden-course">
