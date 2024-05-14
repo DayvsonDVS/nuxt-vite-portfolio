@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     transpile: ['@cataline.io/darpi']
   },
   vite: {
-    base: '/_nuxt/',
     css: {
       preprocessorOptions: {
         scss: {
