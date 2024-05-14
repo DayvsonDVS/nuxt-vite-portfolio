@@ -8,7 +8,7 @@
 
       <div class="contact-form__content-email">
         <ion-icon name="at-outline"></ion-icon>
-        <Field name="user_email" placeholder="Digite o e-mail" class="email" />
+        <Field name="user_email" placeholder="Digite seu e-mail" class="email" />
       </div>
 
       <div class="contact-form__content-message">

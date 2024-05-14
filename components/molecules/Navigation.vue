@@ -28,17 +28,18 @@
 <script setup lang="ts">
 import 'assets/scss/main.scss'
 
+
 const isActive = ref<boolean>(false)
 
 const iconList = [
   { icon: 'home', url: '/' },
   { icon: 'person', url: '/about' },
   { icon: '', url: '' },
-  { icon: 'chatbubble', url: '/contact' },
-  { icon: 'settings' }
+  { icon: 'camera', url: '/diplomas' },
+  { icon: 'chatbubble', url: '/contact' }
 ]
 
-const itemsCircle = [{ icon: 'camera-outline', url: '' }, { icon: 'logo-github', url: 'https://github.com/DayvsonDVS' }, { icon: 'videocam-outline', url: '' }]
+const itemsCircle = [{ icon: 'logo-youtube', url: 'https://www.youtube.com/@DayvsonSilvino-bp2tc' }, { icon: 'logo-github', url: 'https://github.com/DayvsonDVS' }, { icon: 'logo-linkedin', url: 'https://br.linkedin.com/in/dayvson-silvino-62b36882?trk=people-guest_people_search-card' }]
 
 function onClick() {
   isActive.value = !isActive.value
