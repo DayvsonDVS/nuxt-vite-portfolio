@@ -1,5 +1,5 @@
 <template>
-  <div ref="elementVisible" :class="['diploma', { visible }]" :style="`background-image: url(${src});`">
+  <div ref="elementVisible" :class="['diploma', { visible }]" :style="`background-image: url(${dir});`">
 
     <div class="diploma-hidden">
       <div class="diploma-hidden-course">
@@ -18,7 +18,7 @@
 <script setup lang="ts">
 interface prop {
   title: string
-  src: string
+  dir: string
   duration: string
   conclusion: string
 }
