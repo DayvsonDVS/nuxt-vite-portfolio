@@ -41,9 +41,23 @@ const props = defineProps<Prop>()
     grid-auto-flow: column;
 
     .progress-graph-full {
+      width: 0px;
       border: solid 1px #fff;
       height: 8px;
       background: var(--color-purple);
+      animation-name: progress;
+      animation-duration: 2s;
+
+      @keyframes progress {
+        0% {
+          width: 0%;
+        }
+
+        100% {
+          width: v-model(full);
+        }
+
+      }
     }
 
     .progress-graph-empty {
