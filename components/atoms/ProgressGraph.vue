@@ -7,7 +7,6 @@
 
     <div class="progress-graph__body">
       <div class="progress-graph-full" :style="`width: ${props.full}%;`" />
-      <div class="progress-graph-empty" :style="`width: ${props.empty}%;`" />
     </div>
   </div>
 </template>
@@ -17,7 +16,6 @@
 interface Prop {
   title: string
   full: string
-  empty: string
 }
 
 const props = defineProps<Prop>()
@@ -39,10 +37,11 @@ const props = defineProps<Prop>()
   .progress-graph__body {
     display: flex;
     grid-auto-flow: column;
+    border: solid 1px #fff;
 
     .progress-graph-full {
       width: 0px;
-      border: solid 1px #fff;
+
       height: 8px;
       background: var(--color-purple);
       animation-name: progress;
@@ -59,15 +58,6 @@ const props = defineProps<Prop>()
 
       }
     }
-
-    .progress-graph-empty {
-      border-right: solid 1px #fff;
-      border-bottom: solid 1px #fff;
-      border-top: solid 1px #fff;
-      height: 8px;
-      background: var(--color-empty);
-    }
-
   }
 }
 </style>

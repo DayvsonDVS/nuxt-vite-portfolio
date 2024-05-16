@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-const listProfessional = [{ number: '11+', content: 'Anos de Experiência' }, { number: '56+', content: 'Projetos concluídos' }, { number: '5+', content: 'Projetos Vendidos' }]
+const listProfessional = [{ number: '11', content: 'Anos de Experiência' }, { number: '56', content: 'Projetos concluídos' }, { number: '5', content: 'Projetos Vendidos' }]
 
 </script>
 

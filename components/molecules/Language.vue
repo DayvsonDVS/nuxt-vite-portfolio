@@ -1,7 +1,7 @@
 <template>
   <div class="language">
     <RoundGraph title="PORTUGUÊS" :value="['100']" />
-    <RoundGraph title="INGLÊS" :value="['55', '-45']" />
+    <RoundGraph title="INGLÊS" :value="['45', '-55']" />
   </div>
 </template>
 
