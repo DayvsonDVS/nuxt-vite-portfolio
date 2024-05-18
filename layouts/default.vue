@@ -26,12 +26,17 @@
   display: grid;
   grid-template-rows: 200px 1fr 200px;
 
+  @include for-size('tablet') {
+    grid-template-rows: 300px 1fr 200px;
+  }
+
   @include for-size('big-phone') {
     grid-template-rows: 300px 1fr 200px;
   }
 
   @include for-size('phone') {
     grid-template-rows: 300px 1fr 200px;
+    justify-content: center;
   }
 
   .header {
@@ -42,6 +47,13 @@
     padding-bottom: 1.5rem;
     padding-left: 4.5rem;
     position: sticky;
+
+    @include for-size('tablet') {
+      grid-auto-flow: row;
+      gap: 8.2rem;
+      justify-items: center;
+      padding-left: 0;
+    }
 
     @include for-size('big-phone') {
       grid-auto-flow: row;

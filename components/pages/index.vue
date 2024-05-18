@@ -21,7 +21,7 @@
 <style scoped lang="scss">
 .index {
   display: grid;
-  justify-items: left;
+  justify-items: center;
 
   .index__header {
     padding: 2.4rem;
@@ -32,12 +32,23 @@
     border-left: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 
+    @include for-size('tablet') {
+      padding: 1rem;
+    }
+
+    @include for-size('big-phone') {
+      padding: 1rem;
+    }
+
     @include for-size('phone') {
       padding: 1.4rem;
     }
   }
 
   .index__footer {
+    display: grid;
+    justify-items: center;
+
     h2 {
       padding: 2rem;
     }

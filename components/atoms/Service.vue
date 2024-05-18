@@ -28,6 +28,11 @@ defineProps<Prop>()
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 
+  @include for-size('tablet') {
+    max-width: 350px;
+    padding: 1rem;
+  }
+
   @include for-size('big-phone') {
     max-width: 350px;
     padding: 1rem;

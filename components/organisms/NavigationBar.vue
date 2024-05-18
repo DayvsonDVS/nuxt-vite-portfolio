@@ -15,6 +15,11 @@
   width: 80px;
   height: 80px;
 
+  @include for-size('tablet') {
+    padding-top: 3.5rem;
+    margin-left: 0;
+  }
+
   @include for-size('big-phone') {
     padding-top: 3.5rem;
     margin-left: 0;

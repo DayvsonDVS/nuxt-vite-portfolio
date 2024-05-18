@@ -61,6 +61,15 @@ function onClick() {
     justify-content: center;
     align-items: center;
 
+
+    @include for-size('tablet') {
+      width: 350px;
+    }
+
+    @include for-size('big-phone') {
+      width: 350px;
+    }
+
     @include for-size('phone') {
       width: 350px;
     }

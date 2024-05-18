@@ -17,18 +17,19 @@
 <style scoped lang="scss">
 .introduction {
   color: #fff;
-  padding: 0.3rem;
   display: grid;
   justify-content: left;
 
+  @include for-size('tablet') {
+    width: min-content;
+  }
+
   @include for-size('big-phone') {
     width: min-content;
-    font-size: 25px;
   }
 
   @include for-size('phone') {
     width: min-content;
-    font-size: 25px;
   }
 
   h1 {
@@ -36,14 +37,20 @@
     text-align: left;
     margin-bottom: 15px;
 
+
+    @include for-size('tablet') {
+      width: min-content;
+      font-size: 43px;
+    }
+
     @include for-size('big-phone') {
       width: min-content;
-      font-size: 38px;
+      font-size: 43px;
     }
 
     @include for-size('phone') {
       width: min-content;
-      font-size: 46px;
+      font-size: 41px;
     }
   }
 
