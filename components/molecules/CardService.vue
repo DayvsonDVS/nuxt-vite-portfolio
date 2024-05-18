@@ -24,7 +24,27 @@ const listService = [
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 1.8rem;
-    justify-content: space-between;
+
+
+    @include for-size('desktop') {
+      grid-template-columns: repeat(2, max-content);
+    }
+
+    @include for-size('big-tablet') {
+      grid-template-columns: repeat(1, max-content);
+    }
+
+    @include for-size('tablet') {
+      grid-template-columns: repeat(1, max-content);
+    }
+
+    @include for-size('big-phone') {
+      grid-template-columns: repeat(1, max-content);
+    }
+
+    @include for-size('phone') {
+      grid-template-columns: repeat(1, max-content);
+    }
 
     li {
       list-style: none;

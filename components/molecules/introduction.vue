@@ -19,11 +19,32 @@
   color: #fff;
   padding: 0.3rem;
   display: grid;
+  justify-content: left;
+
+  @include for-size('big-phone') {
+    width: min-content;
+    font-size: 25px;
+  }
+
+  @include for-size('phone') {
+    width: min-content;
+    font-size: 25px;
+  }
 
   h1 {
     font-size: 50px;
     text-align: left;
     margin-bottom: 15px;
+
+    @include for-size('big-phone') {
+      width: min-content;
+      font-size: 38px;
+    }
+
+    @include for-size('phone') {
+      width: min-content;
+      font-size: 46px;
+    }
   }
 
   p {

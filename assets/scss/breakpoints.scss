@@ -1,8 +1,10 @@
 $breakpoints: (
-  phone: '(max-width:  600px)',
-  tablet: '(min-width: 600px) and (max-width: 992px)',
-  desktop: '(min-width: 992px) and (max-width: 1200px)',
-  big-desktop: '(min-width: 1200px)'
+  phone: '(max-width:400px)',
+  big-phone: '(min-width: 400px) and (max-width:600px)',
+  tablet: '(min-width: 600px) and (max-width:999px)',
+  big-tablet: '(min-width: 999px) and (max-width:1300px)',
+  desktop: '(min-width: 1300px) and (max-width: 1750px)',
+  big-desktop: '(min-width: 1750px)'
 ) !default;
 
 @mixin for-size($array...) {

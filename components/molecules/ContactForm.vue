@@ -56,7 +56,6 @@ async function send() {
 <style scoped lang="scss">
 .contact-form {
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);

@@ -61,6 +61,10 @@ function onClick() {
     justify-content: center;
     align-items: center;
 
+    @include for-size('phone') {
+      width: 350px;
+    }
+
     .circuLar,
     .circuLarbg1,
     .circuLarbg2 {
@@ -183,14 +187,13 @@ function onClick() {
         gap: 3rem;
         box-shadow: 0 -15px 25px rgba(0, 0, 0, 0.1);
 
+        @include for-size('phone') {
+          gap: 2.5rem;
+        }
+
         li {
           list-style: none;
           cursor: pointer;
-
-          // &:nth-child(2) {
-          //   position: relative;
-          //   left: 10px;
-          // }
 
           &:hover {
             ion-icon {

@@ -14,7 +14,7 @@
     width: 90%;
   }
 
-  @include for-size('tablet') {
+  @include for-size('tablet', 'big-tablet') {
     width: 85%;
   }
 

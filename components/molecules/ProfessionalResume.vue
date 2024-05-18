@@ -20,7 +20,23 @@ const listProfessional = [{ number: '11', content: 'Anos de Experiência' }, { n
   ul {
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    justify-content: space-between;
+    gap: 1rem;
+
+    @include for-size('big-tablet') {
+      grid-template-columns: repeat(2, max-content);
+    }
+
+    @include for-size('tablet') {
+      grid-template-columns: repeat(1, max-content);
+    }
+
+    @include for-size('big-phone') {
+      grid-template-columns: repeat(1, max-content);
+    }
+
+    @include for-size('phone') {
+      grid-template-columns: repeat(1, max-content);
+    }
 
     li {
       list-style: none;
