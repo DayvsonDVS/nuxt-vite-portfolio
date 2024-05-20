@@ -34,12 +34,12 @@ defineProps<Prop>()
   }
 
   @include for-size('big-phone') {
-    max-width: 350px;
+    max-width: 325px;
     padding: 1rem;
   }
 
   @include for-size('phone') {
-    max-width: 350px;
+    max-width: 325px;
     padding: 1rem;
   }
 

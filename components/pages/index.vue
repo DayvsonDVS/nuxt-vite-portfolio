@@ -41,7 +41,7 @@
     }
 
     @include for-size('phone') {
-      padding: 1.4rem;
+      padding: 1rem;
     }
   }
 

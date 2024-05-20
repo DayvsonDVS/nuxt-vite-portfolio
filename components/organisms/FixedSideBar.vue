@@ -14,7 +14,6 @@
 <style scoped lang="scss">
 .fixed-side {
   height: max-content;
-  max-width: 350px;
   display: grid;
   justify-items: center;
   gap: 1rem;
@@ -26,6 +25,21 @@
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 
+  @include for-size('big-desktop') {
+    max-width: 350px;
+  }
+
+  @include for-size('desktop') {
+    max-width: 350px;
+  }
+
+  @include for-size('big-phone') {
+    max-width: 350px;
+  }
+
+  @include for-size('phone') {
+    max-width: 350px;
+  }
 
   .line {
     width: 12px;

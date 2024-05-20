@@ -45,12 +45,12 @@
 
     @include for-size('big-phone') {
       width: min-content;
-      font-size: 43px;
+      font-size: 39px;
     }
 
     @include for-size('phone') {
       width: min-content;
-      font-size: 41px;
+      font-size: 39px;
     }
   }
 

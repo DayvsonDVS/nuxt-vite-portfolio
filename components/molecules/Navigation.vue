@@ -67,11 +67,11 @@ function onClick() {
     }
 
     @include for-size('big-phone') {
-      width: 350px;
+      width: 330px;
     }
 
     @include for-size('phone') {
-      width: 350px;
+      width: 330px;
     }
 
     .circuLar,
@@ -196,9 +196,14 @@ function onClick() {
         gap: 3rem;
         box-shadow: 0 -15px 25px rgba(0, 0, 0, 0.1);
 
+        @include for-size('big-phone') {
+          gap: 2.5rem;
+        }
+
         @include for-size('phone') {
           gap: 2.5rem;
         }
+
 
         li {
           list-style: none;

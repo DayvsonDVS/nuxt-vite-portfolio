@@ -28,10 +28,12 @@
 
   @include for-size('tablet') {
     grid-template-rows: 300px 1fr 200px;
+    justify-content: center;
   }
 
   @include for-size('big-phone') {
     grid-template-rows: 300px 1fr 200px;
+    justify-content: center;
   }
 
   @include for-size('phone') {
@@ -43,10 +45,23 @@
     display: grid;
     align-items: end;
     grid-auto-flow: column;
-    justify-content: space-between;
+
     padding-bottom: 1.5rem;
     padding-left: 4.5rem;
     position: sticky;
+
+    @include for-size('big-desktop') {
+      justify-content: space-between;
+    }
+
+    @include for-size('desktop') {
+      justify-content: space-between;
+    }
+
+    @include for-size('big-tablet') {
+      justify-content: space-between;
+    }
+
 
     @include for-size('tablet') {
       grid-auto-flow: row;
