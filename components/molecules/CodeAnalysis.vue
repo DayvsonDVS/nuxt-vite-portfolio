@@ -13,7 +13,7 @@ const bemEstar = [{ name: 'CSHARP', value: '100%' }] as any
 const vendasCsharp = [{ name: 'CSHARP', value: '60.8%' }, { name: 'HTML', value: '38.6%' }, { name: 'Outros', value: '0.6%' }] as any
 const blogNodejs = [{ name: 'Javascript', value: '97.0%' }, { name: 'HTML', value: '3.0%' }] as any
 const consumoAPi = [{ name: 'HTML', value: '57.3%' }, { name: 'Javascript', value: '42.7%' }] as any
-const siteProdutiva = [{ name: 'HTML', value: '58.9%' }, { name: 'CSHARP', value: '34%' }, { name: 'Javascript', value: '6.7%' }, { name: 'Outros', value: '0.4%' }] as any
+const siteProdutiva = [{ name: 'HTML', value: '58.9%' }, { name: 'CSHARP', value: '34%' }, { name: 'Javascript', value: '6.7%' }] as any
 const apiMongo = [{ name: 'CSHARP', value: '100%' }] as any
 const projetoPerguntas = [{ name: 'Javascript', value: '98.4%' }, { name: 'HTML', value: '1.6%' }] as any
 
@@ -26,9 +26,29 @@ const objectArray = [{ object: portfolio, title: 'Portfólio', path: 'https://ww
 <style scoped lang="scss">
 .code-analysis {
   display: grid;
-  grid-template-columns: repeat(2, 621px);
+  grid-template-columns: repeat(2, 521px);
   gap: 3rem;
   justify-content: center;
+
+  @include for-size('desktop') {
+    grid-template-columns: max-content;
+  }
+
+  @include for-size('big-tablet') {
+    grid-template-columns: max-content;
+  }
+
+  @include for-size('tablet') {
+    grid-template-columns: max-content;
+  }
+
+  @include for-size('big-phone') {
+    grid-template-columns: 325px;
+  }
+
+  @include for-size('phone') {
+    grid-template-columns: 325px;
+  }
 
   .code-analysis__items {
     display: grid;

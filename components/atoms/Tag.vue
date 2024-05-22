@@ -32,11 +32,27 @@ $colors: CSS, HTML, Javascript, CSHARP, Outros, Vue, Typescript;
   display: grid;
   gap: 0.8rem;
 
+  @include for-size('big-phone') {
+    max-width: 325px;
+  }
+
+  @include for-size('phone') {
+    max-width: 325px;
+  }
+
   .tag-header {
     display: grid;
     gap: 2rem;
     grid-auto-flow: column;
     justify-content: left;
+
+    @include for-size('big-phone') {
+      gap: 1rem;
+    }
+
+    @include for-size('phone') {
+      gap: 1rem;
+    }
 
     li {
       display: grid;
@@ -49,10 +65,24 @@ $colors: CSS, HTML, Javascript, CSHARP, Outros, Vue, Typescript;
         height: 15px;
         border-radius: 50%;
 
+
         @each $color in $colors {
           &.#{$color} {
             background: var(--color-#{$color});
+
           }
+        }
+      }
+
+      span {
+        font-size: 12px;
+
+        @include for-size('big-phone') {
+          font-size: 9px;
+        }
+
+        @include for-size('phone') {
+          font-size: 9px;
         }
       }
     }

@@ -65,6 +65,14 @@ async function send() {
   .contact-form__content {
     padding: 2rem;
 
+    @include for-size('big-phone') {
+      width: 325px;
+    }
+
+    @include for-size('phone') {
+      width: 325px;
+    }
+
     .contact-form__content-person {
       display: grid;
       grid-template-columns: max-content 1fr;
