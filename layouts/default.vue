@@ -10,11 +10,13 @@
         <slot />
       </div>
 
-      <div class="footer">
 
-      </div>
     </div>
   </Container>
+  <div class="footer">
+    <NavigationFooter />
+    <SocialPageGallery />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -24,7 +26,7 @@
 <style lang="scss">
 .layout {
   display: grid;
-  grid-template-rows: 200px 1fr 200px;
+  grid-template-rows: 200px 1fr;
 
   @include for-size('tablet') {
     grid-template-rows: 300px 1fr 200px;
@@ -61,7 +63,6 @@
     @include for-size('big-tablet') {
       justify-content: space-between;
     }
-
 
     @include for-size('tablet') {
       grid-auto-flow: row;
@@ -103,7 +104,28 @@
       grid-template-columns: max-content;
     }
   }
+}
 
-  .footer {}
+.footer {
+  margin-top: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 9rem;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+
+  @include for-size('big-phone') {
+    grid-auto-flow: row;
+    gap: 2rem;
+  }
+
+  @include for-size('phone') {
+    grid-auto-flow: row;
+    gap: 2rem;
+  }
+
 }
 </style>
