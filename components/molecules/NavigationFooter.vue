@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-const links = [{ title: 'Home', url: '/' }, { title: 'Sobre', url: '/about' }, { title: 'Diplomas', url: '/diplomas' }, { title: 'Contato', url: 'contact' }]
+const links = [{ title: 'Home', url: '/' }, { title: 'Realizações', url: '/about' }, { title: 'Diplomas', url: '/diplomas' }, { title: 'Contato', url: 'contact' }]
 </script>
 
 <style scoped lang="scss">
